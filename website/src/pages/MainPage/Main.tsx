@@ -1,7 +1,7 @@
 import React from 'react';
 import {useEffect, useState} from "react";
 import Particles from "react-particles";
-
+import style from "./main.module.css"
 export const Main = () => {
     const [videos, setVideos] = useState<any[]>([]);
 
@@ -74,7 +74,7 @@ export const Main = () => {
 
     return (
         <div>
-            <div className="main-content">
+            <div className={style.button}>
                 <h1>Welcome to Entchen Gaming</h1>
                 <p>Check out the latest videos from our YouTube channel:</p>
                 <div id="videos">
