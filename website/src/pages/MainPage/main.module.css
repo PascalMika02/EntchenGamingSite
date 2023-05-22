@@ -1,3 +1,56 @@
-button {
+:root {
+    --color-primary: #000000;      /* Black */
+    --color-secondary: #ffff01;    /* Yellow */
+    --color-third: #f19e23;        /* Orange */
+}
 
+/* Main container */
+#videos {
+    margin-top: 20px;
+}
+
+body {
+    background-color: var(--color-primary)
+}
+/* Video container */
+.video-container {
+    margin-bottom: 20px;
+}
+
+/* Video iframe */
+.video-container iframe {
+    width: 560px;
+    height: 315px;
+}
+
+/* Title */
+.video-container h3 {
+    color: var(--color-third);
+}
+
+/* Button container */
+.button {
+    text-align: center;
+}
+
+/* Headings */
+.button h1 {
+    color: var(--color-primary);
+}
+
+/* Paragraph */
+.button p {
+    color: var(--color-primary);
+}
+
+/* Apply secondary color to button background */
+.button {
+    background-color: var(--color-primary);
+    padding: 20px;
+}
+
+/* Apply third color to button text */
+.button h1,
+.button p {
+    color: var(--color-third);
 }
