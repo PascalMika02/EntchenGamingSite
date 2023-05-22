@@ -1,18 +1,22 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import {Route, Routes} from "react-router-dom";
 import Navbar from "./components/Navbar";
 import {Main} from "./pages/Main";
 
+
 function App() {
   return (
+    <>
 
-      <Routes>
+        <Navbar></Navbar>
+        <Routes>
 
-        <Route path={"/"} element={<Main/>}/>
+            <Route path={"/"} element={<Main/>}/>
 
-    </Routes>
+        </Routes>
+</>
+
   );
 }
 
