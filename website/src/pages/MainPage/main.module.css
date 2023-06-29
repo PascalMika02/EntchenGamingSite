@@ -1,26 +1,42 @@
 :root {
     --color-primary: #000000;      /* Black */
     --color-secondary: #ffff01;    /* Yellow */
-    --color-third: #f19e23;        /* Orange */
+    --color-third: #f19e23;
+
 }
 
 /* Main container */
-#videos {
+.videos {
     margin-top: 20px;
+
 }
 
-body {
-    background-color: var(--color-primary)
+body{
+    background-color: rgba(0, 0, 0, 0.1);
+    background-image:
+    url("C:\Users\Pasca\Projekte\EntchenGamingSite\website\src\image\blob-scene-haikei.svg"),
+    url("C:\Users\Pasca\Projekte\EntchenGamingSite\website\src\image\blob-scene-haikei1.svg");
+    background-attachment: fixed;
+    background-size: cover;
+
+
 }
+
+
 /* Video container */
 .video-container {
     margin-bottom: 20px;
+
+
 }
 
 /* Video iframe */
 .video-container iframe {
     width: 560px;
     height: 315px;
+    max-width: 30em;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2em;
 }
 
 /* Title */
@@ -31,6 +47,7 @@ body {
 /* Button container */
 .button {
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Headings */
@@ -45,8 +62,10 @@ body {
 
 /* Apply secondary color to button background */
 .button {
-    background-color: var(--color-primary);
+    margin-top: 1em;
+    border-radius: 10em;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
 }
 
 /* Apply third color to button text */

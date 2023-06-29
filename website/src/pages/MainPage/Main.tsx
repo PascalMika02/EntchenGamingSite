@@ -5,14 +5,14 @@ export const Main = () => {
     const [videos, setVideos] = useState<any[]>([]);
 
     useEffect(() => {
-        fetchVideos();
+         fetchVideos();
         window.addEventListener('scroll', handleScroll);
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
 
-    const fetchVideos = () => {
+    const fetchVideos = async ()  => {
         fetch(
             'https://www.googleapis.com/youtube/v3/search?part=snippet&channelId=UCDMCthbfVvjj_scXYo7NlEg&maxResults=10&order=date&key=AIzaSyA0AKYHrpnUX4P4-Iohll505v4waIbWfQM'
         )
@@ -76,7 +76,7 @@ export const Main = () => {
             <div className={styles.button}> {/* Apply the "button" class from the CSS module */}
                 <h1>Welcome to Entchen Gaming</h1>
                 <p>Check out the latest videos from our YouTube channel:</p>
-                <div id="videos">
+
                     {videos.map((video) => (
                         <div className={styles['video-container']} key={video.id.videoId}> {/* Apply the "video-container" class from the CSS module */}
                             {/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
@@ -92,7 +92,7 @@ export const Main = () => {
                             <h3>{video.snippet.title}</h3>
                         </div>
                     ))}
-                </div>
+
             </div>
         </div>
     );
