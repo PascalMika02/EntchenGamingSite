@@ -5,6 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Available Scripts
 
 In the project directory, you can run:
+API Key:
+AIzaSyA0AKYHrpnUX4P4-Iohll505v4waIbWfQM
 
 ### `npm start`
 

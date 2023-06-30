@@ -6,6 +6,7 @@ import {Main} from "./pages/MainPage/Main";
 import Particles from "react-tsparticles";
 import {ShortClone} from "./pages/Shorts/ShortClone";
 import {Box, Container} from "@mui/material";
+import Footer from './components/Footer';
 
 
 function App() {
@@ -25,7 +26,9 @@ function App() {
             <Route path={'/clone'} element={<ShortClone/>}/>
 
         </Routes>
+      
           </div>
+          
 </Box>
 
   );
