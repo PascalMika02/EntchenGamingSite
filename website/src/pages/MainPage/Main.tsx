@@ -87,6 +87,7 @@ export const Main = () => {
         <p>Check out the latest videos from our YouTube channel:</p>
 
         <Carousel
+        showIndicators={false}
           showStatus={false}
           showThumbs={true}
           selectedItem={currentSlide}

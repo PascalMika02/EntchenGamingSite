@@ -6,18 +6,16 @@ import { IconContext } from 'react-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTiktok } from '@fortawesome/free-brands-svg-icons';
 
-import logo from '/Users/Pasca/Projekte/EntchenGamingSite/website/src/image/logo.jpeg'; // Assuming you have a logo image file named 'logo.png' in the same directory
+ // Assuming you have a logo image file named 'logo.png' in the same directory
 
 function Navbar() {
   return (
-    <AppBar position="sticky" sx={{ backgroundColor: '#FFFF01', borderRadius: '20px' }}>
+    <AppBar position="sticky" sx={{  backgroundColor: '#FFFF01', borderRadius: '20px' }}>
       <Toolbar>
         <Typography variant="h6" style={{ flexGrow: 1, color: '#000000' }}>
           Entchen Gaming
         </Typography>
-        <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', broderRadius:'20px' }}>
-          <img src={logo} alt="Logo" style={{ height: '40px', marginTop: '-8px' }} />
-        </Box>
+        
         <Button color="inherit" href="https://discord.gg/6BX9y22Cqj" target="_blank" rel="noopener noreferrer">
           <IconContext.Provider value={{ style: { marginRight: '5px', fontSize: '24px', color: '#000000' } }}>
             <FaDiscord />
