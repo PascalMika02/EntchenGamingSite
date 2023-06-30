@@ -82,8 +82,8 @@ export const Main = () => {
                             {/* eslint-disable-next-line jsx-a11y/iframe-has-title */}
                             <iframe
                                 id={`video-${video.id.videoId}`}
-                                width="560"
-                                height="315"
+                                width="100%"
+                                height="auto"
                                 src={`https://www.youtube.com/embed/${video.id.videoId}`}
                                 frameBorder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
